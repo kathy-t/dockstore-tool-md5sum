@@ -8,12 +8,6 @@ task md5 {
  output {
     File value = "md5sum.txt"
  }
-
- runtime {
-   docker: "quay.io/briandoconnor/dockstore-tool-md5sum:1.0.4"
-   cpu: 1
-   memory: "512 MB"
- }
 }
 
 workflow ga4ghMd5 {
